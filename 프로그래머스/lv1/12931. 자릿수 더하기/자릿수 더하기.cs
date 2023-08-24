@@ -2,13 +2,12 @@ using System;
 
 public class Solution {
     public int solution(int n) {
-        int _n = n;
         int answer = 0;
 
-        while (_n > 0) {
-            int _splitN = _n % 10;
+        while (n > 0) {
+            int _splitN = n % 10;
             answer += _splitN;
-            _n /= 10;
+            n /= 10;
         }
 
         return answer;
