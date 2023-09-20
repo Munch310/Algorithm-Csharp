@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-
 public class Solution {
     public int[] solution(int[] array, int[,] commands) {
         int rows = commands.GetLength(0);
