@@ -8,12 +8,14 @@ public class Solution {
         
         char x = s[0];
         
-        for(int i = 0; i < s.Length; i++){
+        for (int i = 0; i < s.Length; i++){
             if(s[i] == x)
                 xCount++;
             else
                 notXCount++;
-            if(xCount == notXCount){
+            
+            if(xCount == notXCount)
+            {
                 count++;
                 if(i + 1 < s.Length)
                     x = s[i+1];
